@@ -1,3 +1,9 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +17,172 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  font-family: national-bold, Arial, Helvetica, sans-serif, Serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 5.625rem;
+  line-height: 4.5rem;
+}
+h1.outline{
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+h2{
+  font-family: national-bold, Arial, Helvetica, sans-serif, Serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 4.5rem;
+  line-height: 3.2rem;
+}
+h2.outline{
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+h2.outline-light{
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+h3{
+  font-family: national-bold, Arial, Helvetica, sans-serif, Serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+h4{
+  font-family: national-bold, Arial, Helvetica, sans-serif, Serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  padding: 0;
+  margin: 0;
+}
+p{
+  font-family: national-regular, Arial, Helvetica, sans-serif, Serif;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+ }
+ p.small{
+   font-size: 1rem;
+   text-transform: uppercase;
+ }
+ p.large{
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+p.mentors{
+  width: 70%;
+  padding-top: 2rem;
+}
+
+@import-normalize;
+
+@font-face {
+  font-family: "national-regular";
+  src: url("./assets/fonts/National2Web-Regular.woff2") format("woff2"),
+       url("./assets/fonts/National2Web-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "national-medium";
+  src: url("./assets/fonts/National2Web-Medium.woff2") format("woff2"),
+       url("./assets/fonts/National2Web-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "national-bold";
+  src: url("./assets/fonts/National2Web-Bold.woff2") format("woff2"),
+       url("./assets/fonts/National2Web-Bold.woff") format("woff");
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

@@ -1,0 +1,86 @@
+.intro { 
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("../../assets/img/intro-bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-container-intro{
+  min-height: 100vh;
+  min-width: 100vw;
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,0)); 
+  background: -o-linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,0)); 
+  background: -moz-linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,0)); 
+  background: linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,0)); 
+}
+
+.content-intro{
+  min-height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 5rem;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+.content {
+  width: 70%;
+}
+
+.push {
+  margin-top: auto;
+  width: 100%;
+}
+
+.light {
+  color: #fff;
+}
+
+.cta-intro{
+  display: flex;
+  flex-direction: row;
+}
+
+.submit-project{
+  background-image: url("../../assets/img/cta-submit-story-trophy.png");
+  background-repeat: no-repeat;
+  padding-left: 84px;
+  padding-right: 5rem;
+  transition: transform .2s; /* Animation */
+}
+.submit-project:hover{
+  transform: scale(1.1);
+}
+.submit-project a {
+  text-decoration: none;
+}
+
+.submit-intern{
+  background-image: url("../../assets/img/cta-apply-intern.png");
+  background-repeat: no-repeat;
+  padding-left: 85px;
+  padding-bottom: 5rem;
+  transition: transform .2s; /* Animation */
+}
+.submit-intern:hover{
+  transform: scale(1.11);
+}
+.submit-intern a {
+  text-decoration: none;
+}
+
+/*@media (min-width: 300px) and (max-width: 688px) {*/
+/*}*/
+
+/*@media (min-width: 689px) and (max-width: 992px) {*/
+/*}*/
+
+/*@media (min-width: 993px) and (max-width: 1366px) {*/
+/*}*/
